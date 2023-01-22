@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=IBM+Plex+Mono:ital,wght@1,200;1,700&family=Kavoon&family=Sofia+Sans:wght@100;400&family=Unbounded:wght@300&display=swap');
+:root{
+    --violet : #d33bfd;
+}
+
+body{
+    font-family: 'Unbounded', cursive;
+    margin: 0px;
+    color: white;
+}
+
+
+header{
+    background: linear-gradient(#13181d, #20212e, #341b47);
+}
+header nav{
+    padding: 30px 5% 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a{
+    text-decoration: none;
+}
+header nav h1{
+    margin: 0;
+    color: var(--violet);
+}
+header nav .right{
+    display: flex;
+    align-items: center;
+}
+header nav .right a p{
+    margin: 0;
+}
+header nav .right a{
+    margin: 0 15px 0 0;
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+header nav .right a:hover{
+    color: white;
+    cursor: pointer;
+}
+header nav .right button{
+    font-size: 16px;
+    padding: 5px 15px;
+    background-color: inherit;
+    border: 1px solid var(--violet);
+    color: var(--violet);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+header nav .right button:hover{
+    color: inherit;
+    background-color: var(--violet);
+}
+.presentation{
+    padding: 30px 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.presentation .product-presentation{
+    width: 100%;
+    flex-shrink: 3;
+}
+.presentation .product-presentation h1{
+    margin: 0;
+    font-size: 4vw;
+    width: 80%;
+}
+.presentation .product-presentation p{
+    font-weight: 300;
+    color: #e9e9e9;
+}
+.presentation .product-presentation button{
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.presentation .image img{
+    width: 100%;
+}
+.first .product-presentation button{
+    background-color: var(--violet);
+    color: white;
+    transition: 0.3s;
+}
+.first .product-presentation button:hover{
+    background-color: inherit;
+    color: var(--violet);
+    border: 1px solid var(--violet);
+}
+
+
+
+.first .product-presentation .small-imgs{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+}
+.first .product-presentation .small-imgs .small{
+    padding: 20px;
+    background-color: #33314d;
+    margin: 0 15px 15px 0;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+.first .product-presentation .small-imgs .small:hover {
+    filter: brightness(50%);
+}
+
+
+.first .product-presentation .small-imgs .small img{
+    width: 120px;
+}
+
+.second{
+    margin: 0;
+    background-color: #13181d;
+}
+.second .product-presentation .new{
+    color: var(--violet);
+}
+.second .product-presentation button{
+    background-color: inherit;
+    border: 1px solid var(--violet);
+    color: var(--violet);
+    transition: 0.3s;
+}
+.second .product-presentation button:hover{
+    background-color: var(--violet);
+    color: white;
+}
+footer{
+    margin: 0;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer h3{
+    color: var(--violet);
+}
+footer a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #ccc;
+    transition: 0.3s;
+}
+footer a:hover{
+    color: white;
+}
+            /* responsive */
+
+@media screen and (max-width: 640px){
+    header nav .right a{
+        display: none;
+    }
+    .presentation .product-presentation h1{
+        font-size: 1.8em;
+    }
+    .presentation .image{
+        display: none;
+
+    }
+    .first .product-presentation .small-imgs .small img{
+        width: 90px;
+    }
+    .second .product-presentation h1{
+        font-size: 1.7em;
+    }
+    footer{
+        justify-content: flex-end;
+    }
+    footer .column{
+        width: 80%;
+
+    }
+}           
